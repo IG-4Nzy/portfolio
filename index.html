@@ -22,6 +22,7 @@
                 secondary: '#ff5005',
                 secondary_light: '#ff9a30',
                 pinky: '#f51e4f',
+                rose: '#f73662',
                 insta: '#962fbf',
                 bg: '#212121',
                 blacky: '#171616',
@@ -80,7 +81,7 @@
     }
     </script>
 </head>
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden bg-primary">
     <div class="bg-primary w-screen h-screen">
         <div class="flex header h-32">
             <div class="container flex justify-between h-32">
@@ -291,8 +292,71 @@
             </div>
         </div>
 
-        <div class="bg-primary h-full w-full ">
+        <div class="bg-primary h-full w-full px-20 md:px-0 space-y-5 md:space-y-20 md:flex md:justify-center md:flex-col ">
+            <div class="md:w-full md:justify-center md:flex "><p class="text-white text-3xl font-bold ml-10 pt-10">My Services</p></div>
+            <div class="space-y-10 flex flex-col md:flex-row md:space-y-0 md:space-x-24 md:w-full md:justify-center">
+                <div class="hover:bg-pinky w-52 h-52 md:w-64 md:h-64 rounded-3xl bg-blacky flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                    <i class="fa-solid fa-code text-2xl" style="color: #ffffff;"></i>
+                    <p class="text-white font-bold text-2xl">Web Design</p>
+                    <p class="text-white text-lg text-center">Works with HTML,CSS,Basic JavaScript,tailwind CSS</p>
+                    <a class="text-white underline" href="">Learn more</a>
+                </div>
+                <div class=" hover:bg-pinky w-52 h-52 md:w-64 md:h-64 rounded-3xl bg-blacky flex items-center justify-center flex-col space-y-3">
+                    <i class="fa-solid fa-crop-simple" style="color: #ffffff;font-size: 30px;"></i>
+                    <p class="text-white font-bold text-2xl">UI/UX</p>
+                    <p class="text-white text-lg text-center">Frontend Designing</p>
+                    <a class="text-white underline" href="">Learn more</a>
+                </div>
+                <div class="rounded-3xl hover:bg-pinku w-52 h-52 md:w-64 md:h-64 rounded-3xl bg-blacky flex items-center justify-center flex-col space-y-3">
+                    <i class="fa-solid fa-terminal" style="color: #ffffff;font-size: 30px;"></i>
+                    <p class="text-white font-bold text-2xl">Full Stack</p>
+                    <p class="text-white text-lg text-center">Basic Django Knowledge</p>
+                    <a class="text-white underline" href="">Learn more</a>
+                </div>
+                
+            </div>
 
+        </div>
+
+
+
+        <div class="bg-primary_light h-full w-full ">
+            <div class="w-full flex justify-center pt-5">
+                <div><p class="text-3xl text-white font-bold pt-5 px-5">My Works</p></div>
+            </div>
+            <div class="w-full flex md:flex-col justify-center items-center md:space-x-20 pt-5 flex-col md:flex-row space-y-5 md:space-y-10 ">
+                <div class="md:flex md:flex-row space-y-5 md:space-y-0 md:space-x-20">
+                    <div class="w-52 h-52 md:w-64 md:h-64 bg-pinky rounded-2xl "></div>
+                    <div class="w-52 h-52 md:w-64 md:h-64 bg-pinky rounded-2xl "></div>
+                    <div class="w-52 h-52 md:w-64 md:h-64 bg-pinky rounded-2xl "></div>
+                </div>
+                <div class=" hidden md:block md:flex-row md:flex md:space-x-20 ">
+                    <div class="w-52 h-52 md:w-64 md:h-64 bg-pinky rounded-2xl "></div>
+                    <div class="w-52 h-52 md:w-64 md:h-64 bg-pinky rounded-2xl "></div>
+                    <div class="w-52 h-52 md:w-64 md:h-64 bg-pinky rounded-2xl "></div>
+                </div>
+                <div class="h-8 w-16 md:h-16 md:w-32 flex text-center items-center justify-center text-sm md:text-2xl font-semibold  rounded-3xl bg-pinky hover:bg-rose border-2 border-primary hover:border-secondary"><a class="text-white" href="">More</a></div>
+            </div>
+        </div>
+
+
+
+        <div class="bg-primary h-full w-full">
+            <div>
+                <div class="space-y-3 px-3 md:space-y-10">
+                    <div><p class="text-white text-3xl font-bold md:text-5xl md:pt-5  md:space-y-10 ">Contact Me</p></div>
+                    <div class="flex space-x-2"><i class="fa-solid fa-paper-plane" style="color: #f51e4f;"></i><p class="text-white ">athulkrishnanas321@gmail.com</p></div>
+                    <div class="flex space-x-2"><i class="fa-solid fa-phone" style="color: #f51e4f;"></i><p class="text-white ">7994128069</p></div>
+                    <div class="space-x-5">
+                        <a href=""><i class="text-2xl px-3  fa-brands fa-instagram "></i></a>
+                        <a href=""><i class="text-2xl px-3  fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="text-2xl px-3  fa-brands fa-x-twitter"></i></a>
+                        <a href=""><i class="text-2xl px-3  fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="text-2xl px-3  fa-brands fa-github"></i></a>
+                    </div>
+                    <div class="w-32 flex text-center justify-center items-center text-white rounded-xl  h-12 bg-secondary hover:secondary_light "><a href="" download="">Download CV</a></div>
+                </div>
+            </div>
         </div>
 
 
@@ -304,8 +368,43 @@
 
 
 
-
+            <div class="w-full h-12 flex text-center  justify-center items-center bg-blacky">
+                <p class="text-white">&copy; 2023 . All rights reserved.</p>
+            </div>
 
     </div>  
 </body>
+<style>
+    /* CSS for the hover effect */
+    a i.fa-instagram{
+        color: white;
+    }
+    a i.fa-x-twitter{
+        color: white;
+    }
+    a i.fa-facebook{
+        color: white;
+    }
+    a i.fa-linkedin{
+        color: white;
+    }
+    a i.fa-github{
+        color: white;
+    }
+    a:hover i.fa-x-twitter{
+        color: #f51e4f;
+    }
+    a:hover i.fa-facebook{
+        color: #f51e4f;
+    }
+    a:hover i.fa-linkedin{
+        color: #f51e4f;
+    }
+    a:hover i.fa-github{
+        color: #f51e4f;
+    }
+    a:hover i.fa-instagram {
+      color: #f51e4f; /* Change to your desired hover color */
+    }
+  </style>
 </html>
