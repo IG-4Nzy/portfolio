@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>base</title>
+    <title>Athul Krishnan A S</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
@@ -37,6 +37,20 @@
         }
       </script>
       <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+    
+    function opentab(tabname) {
+        for (var i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active-link");
+        }
+        for (var i = 0; i < tabcontents.length; i++) {
+            tabcontents[i].classList.remove("active-tab");
+        }
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+    <script>
         document.addEventListener("DOMContentLoaded", function() {
             const hamburger = document.querySelector('#hamburger');
             const menu = document.querySelector('#menu');
@@ -56,6 +70,7 @@
             })
         });
     </script>
+    
     <style>
         
         .tab-contents{
@@ -65,93 +80,67 @@
             display: block;
         }
     </style>
-    <script>
-        var tablinks = document.getElementsByClassName('tab-links');
-        var tabcontents = document.getElementsByClassName('tab-contents');
-    
-    function opentab(tabname) {
-        for (var i = 0; i < tablinks.length; i++) {
-            tablinks[i].classList.remove("active-link");
-        }
-        for (var i = 0; i < tabcontents.length; i++) {
-            tabcontents[i].classList.remove("active-tab");
-        }
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-    </script>
 </head>
-<body class="overflow-x-hidden">
-    <div class="bg-primary w-screen h-screen">
-        <div class="flex header h-32">
-            <div class="container flex justify-between h-32">
-                <div class="text-5xl mt-5 ">
-                    <p  class="text-white text-3xl md:text-5xl px-5 md:px-12 font-bold "><span class="text-pinky">A</span>thul.</p>
-                </div>
-                <div class="">
-                    <ul class="hidden lg:flex text-white  space-x-16 text-lg mt-5">
-                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">Home</li>
-                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">About</li>
-                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">Services</li>
-                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">Portfolio</li>
-                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">Contact</li>
-                    </ul>
-                </div>
-            </div>
-    
-            <!-- mobile screen -->
-    
-            <div id="hamburger" class="lg:hidden cursor-pointer z-50 mt-6 mr-5 lg:h-32">
-               <div><i class="fa-solid fa-bars bar " style="color: #ffffff;font-size: 30px;"></i></div>
-            </div>
-            <div id="menu" class="hidden bg-primary h-[100vh] absolute inset-0 z-10">
-                <ul class="h-full grid place-items-center py-20 text-white">
-                    <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">Home</li>
-                    <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">About</li>
-                    <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">Services</li>
-                    <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">Portfolio</li>
-                    <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">Contact</li>
-                </ul>
+<body>
+    <div class="h-screen w-screen  ">
+        <div class="h-full w-full bg-primary flex flex-col">
+            <!-- nav -->
+            <div id="nav" class="w-full h-24 pt-5 px-48">
+                <div class="h-full flex items-center justify-between">
+                    <div>
+                        <p class="text-white text-5xl font-bold"><span class="text-pinky">A</span>thul.</p>
+                    </div>
+                    <div class="">
+                        <ul class="flex space-x-16 text-white text-xl">
+                            <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">Home</li>
+                            <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">About</li>
+                            <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">Services</li>
+                            <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">Portfolio</li>
+                            <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">Contact</li>
+                        </ul>
+                    </div>
+                </div>     
             </div> 
-        </div>
-        <div class="bg-primary photo w-full flex-col flex md:flex-row overflow-hidden h-full md:items-center md:justify-center md:content-center   px-5">
-                <div class="md:w-3/5 text-white font-sans space-y-5 md:pl-48 flex md:flex-col flex-col md:justify-center  ">
-                    <p class="lg:text-3xl md:text-3xl md:w-full text-xl">Diploma In Computer Engineering</p>
-                    <p class="lg:text-8xl md:text-5xl text-4xl font-bold">Hi, I'm <span class="text-pinky">Athul</span></p>
-                    <p class="lg:text-9xl md:text-5xl text-3xl font-bold">From Kerala</p>
+            <!-- photo -->
+            <div class="photo w-full flex overflow-hidden h-full">
+                <div class="w-1/2 text-white font-sans space-y-5 pl-48 flex flex-col justify-center  ">
+                    <p class="text-3xl ">Diploma In Computer Engineering</p>
+                    <p class="text-8xl font-bold">Hi, I'm <span class="text-pinky">Athul</span></p>
+                    <p class="text-9xl font-bold">From Kerala</p>
                 </div>
-                <div class="md:w-1/2 md:h-full h-3/5 w-full overflow-hidden flex md:justify-center  ">
-                    <img class="md:w-11/12 h-full md:mr-16 overflow-hidden rounded-full" src="2.png" alt="img.png">
+                <div class="w-1/2 h-full flex justify-center ">
+                    <img class="w-11/12 h-full mr-16 overflow-hidden " src="2.png" alt="img.png">
                 </div>
+            </div>     
         </div>
-
-        <div class="bg-blacky w-full flex flex-col md:flex-row">
+        <!-- screen2 -->
+        <div class="h-full w-full bg-blacky flex items-center ">
             <div class="h-full w-1/2">
                 <!-- image -->
-                <div class="md:w-full md:h-full flex md:items-center md:justify-center">
-                    <div class="md:h-1/2 relative left-20 mt-10  md:left-0 md:w-1/2 bg-bg rounded-3xl overflow-hidden md:items-center flex justify-center">
-                        <div class="flex w-full "><img class="relative md:top-16 top-5" src="2.png" alt="#"></div>
+                <div class="w-full h-full flex items-center justify-center">
+                    <div class="h-1/2 w-1/2 bg-bg rounded-3xl overflow-hidden items-center flex ">
+                        <img class="relative top-16" src="2.png" alt="#">
                     </div>
                 </div>
             </div>
             <!-- description -->
-            <div class="md:w-1/2 text-justify pr-28 text-white lg:space-y-10 md:space-y-5 sm:space-y-5 mt-10">
-                <p class="lg:text-7xl md:text-4xl font-bold ml-5 text-3xl">About Me</p>
-                <p class="md:leading-7 px-5 ">Meet Athul Krishnan A S, a talented and motivated individual with a passion for computer engineering and full-stack development. At just 20 years old, Athul hails from the picturesque town of Vilappilsala in Thiruvananthapuram, Kerala.
+            <div class="w-1/2 text-justify pr-28 text-white space-y-10  relative right-44">
+                <p class="text-7xl font-bold">About Me</p>
+                <p class="leading-7">Meet Athul Krishnan A S, a talented and motivated individual with a passion for computer engineering and full-stack development. At just 20 years old, Athul hails from the picturesque town of Vilappilsala in Thiruvananthapuram, Kerala.
 
                     Athul is a dedicated and aspiring computer engineer with a thirst for knowledge and a strong desire to make a mark in the tech industry.
                     
                     What truly sets Athul apart is his unwavering passion for full-stack development. His enthusiasm and commitment to honing his skills in this field make him a rising star in the world of software development.
                     
                     Keep an eye out for his future projects and innovations in the world of technology.</p>
-            
                     <div>
-                        <div class="flex text-white md:space-x-10 space-y-3 md:space-y-0 px-5 mt-5 text-xl tab-titles flex-col md:flex-row ">
+                        <div class="flex text-white space-x-10 text-xl tab-titles ">
                             <p class="hover:text-pinky hover:border-b-2 border-pinky ease-in duration-200 tab-links active-link" onclick="opentab('skills')">Skills</p>
                             <p class="hover:text-pinky hover:border-b-2 border-pinky ease-in duration-200 tab-links " onclick="opentab('education')">Education</p>
                             <p class="hover:text-pinky hover:border-b-2 border-pinky ease-in duration-200 tab-links " onclick="opentab('experience')">Experience</p>
                             <p class="hover:text-pinky hover:border-b-2 border-pinky ease-in duration-200 tab-links " onclick="opentab('hobbies')">Hobbies</p>
                         </div>
-                        <div class="tab-contents active-tab px-10" id="skills">
+                        <div class="tab-contents active-tab " id="skills">
                             <ul class="space-y-5 pt-10">
                                 <li>
                                     <span class="text-pinky">Programming Languages</span>
@@ -201,7 +190,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="tab-contents px-10 " id="education">
+                        <div class="tab-contents " id="education">
                             <ul class="space-y-5 pt-10">
                                 <li>
                                     <span class="text-pinky">Diploma in Computer Engineering</span>
@@ -253,7 +242,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="tab-contents px-10 " id="experience">
+                        <div class="tab-contents " id="experience">
                             <ul class="space-y-5 pt-10">
                                 <li>
                                     <span class="text-pinky">Web Development Intern</span>
@@ -271,7 +260,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="tab-contents  px-10" id="hobbies">
+                        <div class="tab-contents " id="hobbies">
                             <ul class="space-y-5 pt-10">
                                 <li>
                                     <span class="text-white">Coding and Programming</span>
@@ -288,24 +277,15 @@
                             </ul>
                         </div>
                     </div>       
-            </div>
+            </div>              
         </div>
-
-        <div class="bg-primary h-full w-full ">
-
+        <!-- screen 3 -->
+        <div class="h-full w-full bg-primary">
+            
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>  
+    </div>
+        
 </body>
+
+
 </html>
