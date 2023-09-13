@@ -58,7 +58,9 @@
         });
     </script>
     <style>
-        
+        html{
+            scroll-behavior: smooth;
+        }
         .tab-contents{
             display: none;
         }
@@ -83,18 +85,18 @@
 </head>
 <body class="overflow-x-hidden bg-primary">
     <div class="bg-primary w-screen h-screen">
-        <div class="flex header h-32">
+        <div class="flex header h-32" id="home">
             <div class="container flex justify-between h-32">
                 <div class="text-5xl mt-5 ">
                     <p  class="text-white text-3xl md:text-5xl px-5 md:px-12 font-bold "><span class="text-pinky">A</span>thul.</p>
                 </div>
                 <div class="">
                     <ul class="hidden lg:flex text-white  space-x-16 text-lg mt-5">
-                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">Home</li>
-                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">About</li>
-                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">Services</li>
-                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">Portfolio</li>
-                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">Contact</li>
+                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#home"> Home</a></li>
+                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#about"> About</a></li>
+                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#services"> Services</a></li>
+                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#portfolio"> Portfolio</a></li>
+                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#contact"> Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -106,11 +108,11 @@
             </div>
             <div id="menu" class="hidden bg-primary h-[100vh] absolute inset-0 z-10">
                 <ul class="h-full grid place-items-center py-20 text-white">
-                    <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">Home</li>
-                    <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">About</li>
-                    <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">Services</li>
-                    <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">Portfolio</li>
-                    <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200">Contact</li>
+                    <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#home"> Home</a></li>
+                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#about"> About</a></li>
+                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#services"> Services</a></li>
+                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#portfolio"> Portfolio</a></li>
+                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#contact"> Contact</a></li>
                 </ul>
             </div> 
         </div>
@@ -135,9 +137,9 @@
                 </div>
             </div>
             <!-- description -->
-            <div class="md:w-1/2 text-justify pr-28 text-white lg:space-y-10 md:space-y-5 sm:space-y-5 mt-10">
-                <p class="lg:text-7xl md:text-4xl font-bold ml-5 text-3xl">About Me</p>
-                <p class="md:leading-7 px-5 ">Meet Athul Krishnan A S, a talented and motivated individual with a passion for computer engineering and full-stack development. At just 20 years old, Athul hails from the picturesque town of Vilappilsala in Thiruvananthapuram, Kerala.
+            <div id="about" class="w-screen md:w-1/2 text-justify pr-28 text-white lg:space-y-10 md:space-y-5 sm:space-y-5 mt-10">
+                <p class="w-screen lg:text-7xl md:text-4xl font-bold ml-5 text-3xl">About Me</p>
+                <p class="w-screen md:leading-7 px-5 ">Meet Athul Krishnan A S, a talented and motivated individual with a passion for computer engineering and full-stack development. At just 20 years old, Athul hails from the picturesque town of Vilappilsala in Thiruvananthapuram, Kerala.
 
                     Athul is a dedicated and aspiring computer engineer with a thirst for knowledge and a strong desire to make a mark in the tech industry.
                     
@@ -152,8 +154,8 @@
                             <p class="hover:text-pinky hover:border-b-2 border-pinky ease-in duration-200 tab-links " onclick="opentab('experience')">Experience</p>
                             <p class="hover:text-pinky hover:border-b-2 border-pinky ease-in duration-200 tab-links " onclick="opentab('hobbies')">Hobbies</p>
                         </div>
-                        <div class="tab-contents active-tab px-10" id="skills">
-                            <ul class="space-y-5 pt-10">
+                        <div class="w-screen tab-contents active-tab px-10 h-screen scroll-smooth " id="skills">
+                            <ul class="space-y-5 pt-10 text-sm md:text-lg">
                                 <li>
                                     <span class="text-pinky">Programming Languages</span>
                                     <ol class="list-disc">
@@ -202,8 +204,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="tab-contents px-10 " id="education">
-                            <ul class="space-y-5 pt-10">
+                        <div class="w-screen tab-contents px-10  h-screen scroll-smooth " id="education">
+                            <ul class="space-y-5 pt-10 text-sm md:text-lg">
                                 <li>
                                     <span class="text-pinky">Diploma in Computer Engineering</span>
                                     <ol class="list-disc">
@@ -254,8 +256,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="tab-contents px-10 " id="experience">
-                            <ul class="space-y-5 pt-10">
+                        <div class="w-screen tab-contents px-10  h-screen scroll-smooth " id="experience">
+                            <ul class="space-y-5 pt-10 text-sm md:text-lg">
                                 <li>
                                     <span class="text-pinky">Web Development Intern</span>
                                     <ol class="list-disc">
@@ -272,8 +274,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="tab-contents  px-10" id="hobbies">
-                            <ul class="space-y-5 pt-10">
+                        <div class="w-screen tab-contents  px-10 h-screen scroll-smooth " id="hobbies">
+                            <ul class="space-y-5 pt-10 text-sm md:text-lg">
                                 <li>
                                     <span class="text-white">Coding and Programming</span>
                                 </li>
@@ -292,7 +294,7 @@
             </div>
         </div>
 
-        <div class="bg-primary h-full w-full px-20 md:px-0 space-y-5 md:space-y-20 md:flex md:justify-center md:flex-col ">
+        <div id="services" class="bg-primary h-full w-full px-20 md:px-0 space-y-5 md:space-y-20 md:flex md:justify-center md:flex-col ">
             <div class="md:w-full md:justify-center md:flex "><p class="text-white text-3xl font-bold ml-10 pt-10">My Services</p></div>
             <div class="space-y-10 flex flex-col md:flex-row md:space-y-0 md:space-x-24 md:w-full md:justify-center">
                 <div class="hover:bg-pinky w-52 h-52 md:w-64 md:h-64 rounded-3xl bg-blacky flex items-center justify-center flex-col space-y-1 md:space-y-3">
@@ -307,7 +309,7 @@
                     <p class="text-white text-lg text-center">Frontend Designing</p>
                     <a class="text-white underline" href="">Learn more</a>
                 </div>
-                <div class="rounded-3xl hover:bg-pinky w-52 h-52 md:w-64 md:h-64 rounded-3xl bg-blacky flex items-center justify-center flex-col space-y-3">
+                <div class="p-1 rounded-3xl hover:bg-pinky w-52 h-52 md:w-64 md:h-64 rounded-3xl bg-blacky flex items-center justify-center flex-col space-y-3">
                     <i class="fa-solid fa-terminal" style="color: #ffffff;font-size: 30px;"></i>
                     <p class="text-white font-bold text-2xl">Full Stack</p>
                     <p class="text-white text-lg text-center">Basic Django Knowledge</p>
@@ -320,7 +322,7 @@
 
 
 
-        <div class="bg-primary_light h-full w-full ">
+        <div id="portfolio" class="bg-primary_light h-full w-full ">
             <div class="w-full flex justify-center pt-5">
                 <div><p class="text-3xl text-white font-bold pt-5 px-5">My Works</p></div>
             </div>
@@ -341,27 +343,27 @@
 
 
 
-        <div class="bg-primary h-full w-full">
+        <div id="contact" class="bg-primary h-full w-full md:flex md:items-center md:content-center md:justify-center">
             <div class="w-full md:flex md:space-x-4">
                 <div class="md:w-full space-y-10 px-5 md:space-y-16">
                     <div><p class="text-white text-3xl font-bold md:text-5xl md:pt-5  md:space-y-10 ">Contact Me</p></div>
                     <div class="flex space-x-2"><i class="fa-solid fa-paper-plane" style="color: #f51e4f;"></i><p class="text-white ">athulkrishnanas321@gmail.com</p></div>
                     <div class="flex space-x-2"><i class="fa-solid fa-phone" style="color: #f51e4f;"></i><p class="text-white ">7994128069</p></div>
                     <div class="space-x-3">
-                        <a href=""><i class="text-2xl px-3  fa-brands fa-instagram "></i></a>
-                        <a href=""><i class="text-2xl px-3  fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="text-2xl px-3  fa-brands fa-x-twitter"></i></a>
-                        <a href=""><i class="text-2xl px-3  fa-brands fa-linkedin"></i></a>
-                        <a href=""><i class="text-2xl px-3  fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/ig_4nzy/"><i class="text-2xl px-3  fa-brands fa-instagram "></i></a>
+                        <a href="https://www.facebook.com/athul.sreeni.35"><i class="text-2xl px-3  fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/Athul_Sreeni"><i class="text-2xl px-3  fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/athul-krishnan-182109230/"><i class="text-2xl px-3  fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/IG-4Nzy"><i class="text-2xl px-3  fa-brands fa-github"></i></a>
                     </div>
                     <div class="w-32 flex text-center justify-center items-center text-white rounded-xl  h-12 bg-secondary hover:secondary_light "><a href="" download="">Download CV</a></div>
                 </div>
-                <div class="pt-10 px-16 w-full">
-                    <form class="w-full space-y-10 md0space-y-0" action="" method="post">
-                        <div class="w-full"><input class="w-64 md:w-96" type="text" placeholder="Your Name" name="Name" id="name"> </div>
-                        <div class="w-full"><input class="w-64 md:w-96" type="email" placeholder="Your Email" name="email" id="name"> </div>
+                <div class="pt-10 px-16 w-screen">
+                    <form class="w-full space-y-10 md:space-y-0"  name="submit-to-google-sheet" method="post">
+                        <div class="w-full"><input class="w-64 md:w-96" type="text" placeholder="Your Name" name="entry.532883643" id="name"> </div>
+                        <div class="w-full"><input class="w-64 md:w-96" type="email" placeholder="Your Email" name="entry.1343829966" id="name"> </div>
                         <div class="w-full">
-                            <textarea class="w-64 md:w-96" placeholder="Messege" class=""></textarea>
+                            <textarea class="w-64 md:w-96" placeholder="Messege" class="" name="entry.1495572228"></textarea>
                         </div>
                         <div class="w-full">
                             <input type="submit" value="SUBMIT" class="w-32 flex text-center justify-center items-center text-white rounded-xl  h-12 bg-secondary hover:secondary_light ">
@@ -372,7 +374,10 @@
 
         </div>
 
-
+        
+        
+        
+        
 
 
 
@@ -419,5 +424,20 @@
     a:hover i.fa-instagram {
       color: #f51e4f; /* Change to your desired hover color */
     }
+    body{
+        margin: 0%;
+        padding: 0%;
+    }
   </style>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyJ_D0rvuqe6Vj53kA--vOOvOmF-plhrYfeZolsgazWZayaYRY0TmHKsMb5o7rMfReTHQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </html>
