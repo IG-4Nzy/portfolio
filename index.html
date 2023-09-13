@@ -359,16 +359,17 @@
                     <div class="w-32 flex text-center justify-center items-center text-white rounded-xl  h-12 bg-secondary hover:secondary_light "><a href="" download="">Download CV</a></div>
                 </div>
                 <div class="pt-10 px-16 w-screen">
-                    <form class="w-full space-y-10 md:space-y-0"  name="submit-to-google-sheet" method="post">
-                        <div class="w-full"><input class="w-64 md:w-96" type="text" placeholder="Your Name" name="entry.532883643" id="name"> </div>
-                        <div class="w-full"><input class="w-64 md:w-96" type="email" placeholder="Your Email" name="entry.1343829966" id="name"> </div>
+                    <form class="w-full space-y-10 md:space-y-0"  name="submit-to-google-sheet">
+                        <div class="w-full"><input class="w-64 md:w-96" type="text" placeholder="Your Name" name="Name" id="name" required> </div>
+                        <div class="w-full"><input class="w-64 md:w-96" type="email" placeholder="Your Email" name="Email" id="name" required> </div>
                         <div class="w-full">
-                            <textarea class="w-64 md:w-96" placeholder="Messege" class="" name="entry.1495572228"></textarea>
+                            <textarea class="w-64 md:w-96" placeholder="Messege" class="" name="Messages" required></textarea>
                         </div>
                         <div class="w-full">
                             <input type="submit" value="SUBMIT" class="w-32 flex text-center justify-center items-center text-white rounded-xl  h-12 bg-secondary hover:secondary_light ">
                         </div>
                     </form>
+                    <div class="mt-5" ><span id="msg" class="text-red-500 rounded-2xl  p-2"></span></div>
                 </div>
             </div>
 
@@ -432,11 +433,18 @@
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyJ_D0rvuqe6Vj53kA--vOOvOmF-plhrYfeZolsgazWZayaYRY0TmHKsMb5o7rMfReTHQ/exec'
     const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
   
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
+        .then(response =>{
+            msg.innerHTML = "message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
         .catch(error => console.error('Error!', error.message))
     })
   </script>
