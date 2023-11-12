@@ -71,6 +71,25 @@
         .tab-contents.active-tab{
             display: block;
         }
+        #scroll {
+            scrollbar-width: thin;
+            scrollbar-color: #4A5568 #2D3748;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        #scroll::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        #scroll::-webkit-scrollbar-thumb {
+            background-color: #2D3748;
+            border-radius: 10px;
+        }
+
+        #scroll::-webkit-scrollbar-track {
+            background-color: #4A5568;
+        }
     </style>
     <script>
         var tablinks = document.getElementsByClassName('tab-links');
@@ -294,55 +313,234 @@
         </div>
 
         <div id="services" class="bg-primary h-full w-screen px-20 md:px-0 space-y-5 md:space-y-20 md:flex md:justify-center md:flex-col ">
-            <div class="md:w-full md:justify-center md:flex "><p class="text-white text-3xl font-bold ml-10 pt-10">My Services</p></div>
-            <div class="space-y-10 flex flex-col md:flex-row md:space-y-0 md:space-x-24 md:w-full md:justify-center">
-                <div class="hover:bg-pinky w-52 h-52 md:w-64 md:h-64 rounded-3xl bg-blacky flex items-center justify-center flex-col space-y-1 md:space-y-3">
-                    <i class="fa-solid fa-code text-2xl" style="color: #ffffff;"></i>
-                    <p class="text-white font-bold text-2xl">Web Design</p>
-                    <p class="text-white text-lg text-center">Works with HTML,CSS,Basic JavaScript,tailwind CSS</p>
-                    <a class="text-white underline" href="">Learn more</a>
+            <div class="md:w-full md:justify-center md:flex "><p class="text-white text-3xl font-bold ml-10 pt-10">What i know</p></div>
+            <h1 class="text-white font-semibold text-2xl border-l-2 h-10 border-secondary pl-5 md:pl-0 md:border-l-0 md:flex md:ml-12 md:border-b-2 md:border-secondary md:w-24">Frontend</h1>
+            <div class="space-y-10 flex flex-col md:flex-wrap md:flex-row md:space-y-0 md:space-x-24 md:w-full md:justify-center">
+                <div class=" w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                    <img class="md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="html,css.jpg" alt="webdesign">
+                    <p class="text-white font-bold text-2xl">HTML ,CSS</p>
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert</div>
+                    </div>
                 </div>
-                <div class=" hover:bg-pinky w-52 h-52 md:w-64 md:h-64 rounded-3xl bg-blacky flex items-center justify-center flex-col space-y-3">
-                    <i class="fa-solid fa-crop-simple" style="color: #ffffff;font-size: 30px;"></i>
-                    <p class="text-white font-bold text-2xl">UI/UX</p>
-                    <p class="text-white text-lg text-center">Frontend Designing</p>
-                    <a class="text-white underline" href="">Learn more</a>
+                <div class=" w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                    <img class="md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="tailwind.jpg" alt="tailwind">
+                    <p class="text-white font-bold text-2xl">Tailwind CSS</p>
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert</div>
+                    </div>
                 </div>
-                <div class="p-1 rounded-3xl hover:bg-pinky w-52 h-52 md:w-64 md:h-64 rounded-3xl bg-blacky flex items-center justify-center flex-col space-y-3">
-                    <i class="fa-solid fa-terminal" style="color: #ffffff;font-size: 30px;"></i>
-                    <p class="text-white font-bold text-2xl">Full Stack</p>
-                    <p class="text-white text-lg text-center">Basic Django Knowledge</p>
-                    <a class="text-white underline" href="">Learn more</a>
+                <div class=" w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                    <img class="md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="javascript.png" alt="javascript">
+                    <p class="text-white font-bold text-2xl">Javascript</p>
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 60%"> Advanced</div>
+                    </div>
                 </div>
+                <div class=" w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                    <img class="md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="react.png" alt="react">
+                    <p class="text-white font-bold text-2xl">React JS</p>
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 30%"> Novice</div>
+                    </div>
+                </div>
+                
                 
             </div>
 
         </div>
+        <div id="services2" class=" mt-96 md:mt-0 bg-primary h-full w-screen px-20 md:px-0 space-y-5 md:space-y-20 md:flex md:justify-center md:flex-col ">
+            <h1 class="text-white font-semibold text-2xl border-l-2 h-10 border-secondary pl-5 md:pl-0 md:border-l-0 md:flex md:ml-12 md:border-b-2 md:border-secondary md:w-24">Backend</h1>
+            <div class="space-y-10 flex flex-col md:flex-wrap md:flex-row md:space-y-0 md:space-x-24 md:w-full md:justify-center">
+                <div class="mt-5 w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                    <img class="md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="django.png" alt="webdesign">
+                    <p class="text-white font-bold text-2xl">Python Django</p>
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Intermediate</div>
+                    </div>
+                </div>
+                <div class=" w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                    <img class="md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="larawel.jpg" alt="tailwind">
+                    <p class="text-white font-bold text-2xl">PHP Laravel</p>
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 50%"> Novice </div>
+                    </div>
+                </div>
+                <div class=" w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                    <img class="md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="nodejs.jpg" alt="javascript">
+                    <p class="text-white font-bold text-2xl">NODE JS</p>
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 30%"> Novice</div>
+                    </div>
+                </div>
+                <div class=" w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                    <img class="md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="expressjs.png" alt="react">
+                    <p class="text-white font-bold text-2xl">Express JS</p>
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 30%"> Novice</div>
+                    </div>
+                </div>
+                
+                
+            </div>
+
+        </div>
+        <div id="services3" class="mt-96 md:mt-0 bg-primary h-full w-screen px-20 md:px-0 space-y-5 md:space-y-20 md:flex md:justify-center md:flex-col ">
+            <h1 class="text-white font-semibold text-2xl border-l-2 h-10 border-secondary pl-5 md:pl-0 md:border-l-0 md:flex md:ml-12 md:border-b-2 md:border-secondary md:w-24">Databases</h1>
+            <div class="space-y-10 flex flex-col md:flex-wrap md:flex-row md:space-y-0 md:space-x-24 md:w-full md:justify-center">
+                <div class="mt-5 w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                    <img class="md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="mysql.png" alt="webdesign">
+                    <p class="text-white font-bold text-2xl">MySql </p>
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 70%"> Proficient</div>
+                    </div>
+                </div>
+                <div class=" w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                    <img class="md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="sqlite3.jpg" alt="tailwind">
+                    <p class="text-white font-bold text-2xl">Sqlite3 </p>
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 70%"> Proficient </div>
+                    </div>
+                </div>       
+            </div>
+
+        </div>
+        <div id="services4" class=" bg-primary h-full w-screen px-20 md:px-0 space-y-5 md:space-y-20 md:flex md:justify-center md:flex-col ">
+            <h1 class="text-white font-semibold text-2xl border-l-2 h-10 border-secondary pl-5 md:pl-0 md:border-l-0 md:flex md:ml-12 md:border-b-2 md:border-secondary md:w-52">Languages Known</h1>
+            <div id="scroll" class="space-y-24 flex flex-col md:overflow-auto md:flex-wrap md:overflow-x-scroll md:flex-row md:space-y-0 md:space-x-24 md:w-full md:justify-center">
+                <div class="mt-5 w-52 h-16 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                    <img class="h-16 md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="c.png" alt="webdesign">
+                    <p class="text-white font-bold text-2xl">C Programming </p>
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 80%"> Proficient</div>
+                    </div>
+                </div>
+                <div class=" w-52 h-16 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                    <img class="h-16 md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="java.jpg" alt="tailwind">
+                    <p class="text-white font-bold text-2xl">Java </p>
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 50%"> Novice </div>
+                    </div>
+                </div>       
+                <div class=" w-52 h-16 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                    <img class="h-16 md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="php.png" alt="tailwind">
+                    <p class="text-white font-bold text-2xl">PHP </p>
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 50%"> Proficient </div>
+                    </div>
+                </div>       
+                <div class=" w-52 h-16 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                    <img class="md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="python.png" alt="tailwind">
+                    <p class="text-white font-bold text-2xl">PYTHON </p>
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 70%"> Proficient </div>
+                    </div>
+                </div>       
+                <div class=" w-52 h-16 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                    <img class="h-16 md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="javascript.png" alt="tailwind">
+                    <p class="text-white font-bold text-2xl">Javascript </p>
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 60%"> Proficient </div>
+                    </div>
+                </div>       
+                <div class=" w-52 h-16 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                    <img class="h-16 md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="html.png" alt="tailwind">
+                    <p class="text-white font-bold text-2xl">HTML </p>
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert </div>
+                    </div>
+                </div>       
+                <div class=" w-52 h-16 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                    <img class="h-16 md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="css.jpg" alt="tailwind">
+                    <p class="text-white font-bold text-2xl">CSS </p>
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert </div>
+                    </div>
+                </div>       
+                <div class=" w-52 h-16 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                    <img class="h-16 md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="mysql.png" alt="tailwind">
+                    <p class="text-white font-bold text-2xl">SQL </p>
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 50%"> Proficient </div>
+                    </div>
+                </div>       
+            </div>
+
+        </div>
 
 
 
-        <div id="portfolio" class="bg-primary_light h-full w-screen ">
-            <div class="w-full flex justify-center pt-5">
+        <div id="portfolio" class="mt-96 bg-primary_light h-full w-screen mt-96 md:mt-0 ">
+            <div class="w-full flex justify-center pt-5">    
                 <div><p class="text-3xl text-white font-bold pt-5 px-5">My Works</p></div>
             </div>
-            <div class="w-full flex md:flex-col justify-center items-center md:space-x-20 pt-5 flex-col md:flex-row space-y-5 md:space-y-10 ">
-                <div class="md:flex md:flex-row space-x-10 md:space-y-0 md:space-x-20">
-                    <a href="https://github.com/IG-4Nzy/hospital-website-"><div class="duration-200 ease-in bg bg-cover bg-no-repeat bg-center w-52 h-52 md:w-64 md:h-64 bg-pinky rounded-2xl flex items-center justify-center "> <p class="text-3xl text-white text-center font-bold  md:hover:block md:hover:text-white">Hospital Management Website</p></div></a>
-                    <a href="https://github.com/IG-4Nzy/food-delivery"><div class="duration-200 ease-in bg bg-cover bg-no-repeat bg-center w-52 h-52 md:w-64 md:h-64 bg-pinky rounded-2xl flex items-center justify-center "> <p class="text-3xl text-white text-center font-bold  md:hover:block md:hover:text-white">Food Delivery Website</p></div></a>
-                    <a href="https://github.com/IG-4Nzy/SocialMedia"><div class="duration-200 ease-in bg bg-cover bg-no-repeat bg-center w-52 h-52 md:w-64 md:h-64 bg-pinky rounded-2xl flex items-center justify-center "> <p class="text-3xl text-white text-center font-bold  md:hover:block md:hover:text-white">Social Media Website</p></div></a>
+            <div class="w-full flex md:flex-wrap justify-center items-center md:space-x-20 pt-5  flex-col md:flex-row  space-y-5 md:space-y-10 ">
+                <div class=" w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                    <a href="https://github.com/IG-4Nzy/CSMS"><img class="md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="csms.png" alt="react"></a>
+                    <p class="text-white font-bold text-xs text-center">Collage Students Monitoring System (CSMS)</p>
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 30%"> Beginner</div>
+                    </div>
                 </div>
-                <div class=" hidden md:block md:flex-row md:flex md:space-x-20 ">
-                    <a href="https://github.com/IG-4Nzy/hospiital-management_django"><div class="duration-200 ease-in bg bg-cover bg-no-repeat bg-center w-52 h-52 md:w-64 md:h-64 bg-pinky rounded-2xl flex items-center justify-center "> <p class="text-3xl text-white text-center font-bold  md:hover:block md:hover:text-white">Django Hospital Website</p></div></a>
-                    <a href="https://github.com/IG-4Nzy/CSMS"><div class="duration-200 ease-in bg bg-cover bg-no-repeat bg-center w-52 h-52 md:w-64 md:h-64 bg-pinky rounded-2xl flex items-center justify-center "> <p class="text-3xl text-white text-center font-bold  md:hover:block md:hover:text-white">CSMS</p></div></a>
-                    <a href="https://github.com/IG-4Nzy/portfolio"><div class="duration-200 ease-in bg bg-cover bg-no-repeat bg-center w-52 h-52 md:w-64 md:h-64 bg-pinky rounded-2xl flex items-center justify-center "> <p class="text-3xl text-white text-center font-bold  md:hover:block md:hover:text-white">Portfolio</p></div></a>
+                <div class=" w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                    <a href="https://github.com/IG-4Nzy/hospital-website-"><img class="md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="hospitalmanagement.jpg" alt="react"></a>
+                    <p class="text-white font-bold text-2xl">Hospital Management Website</p>
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 30%"> Beginner</div>
+                    </div>
                 </div>
-                <div class="h-8 w-16 md:h-16 md:w-32 flex text-center items-center justify-center text-sm md:text-2xl font-semibold  rounded-3xl bg-pinky hover:bg-rose border-2 border-primary hover:border-secondary"><a class="text-white" href="">More</a></div>
+                <div class=" w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                    <a href="https://github.com/IG-4Nzy/hospiital-management_django"><img class="md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="djangohos.jpg" alt="react"></a>
+                    <p class="text-white font-bold text-2xl">Django Hospital Website</p>
+                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 30%"> Beginner</div>
+                    </div>
+                </div>   
+            </div>
+            <div class="w-full h-full justify-center items-center flex pt-24 flex-col md:ml-20 md:space-y-5 ">
+                <p class="text-white text-xs md:text-xl">More Projects</p>
+                <div class="w-full h-full flex items-center md:justify-center md:items-start md:flex-row flex-col md:space-x-5 space-y-5">
+                    <a href="https://github.com/IG-4Nzy/food-delivery"><div class="flex space-x-5 h-20 items-center border-2 border-gray-300 p-5 md:hover:scale-105 md:transition md:duration-200">
+                        <i class="fas fa-hamburger text-2xl md:text-4xl" style="color: #a6a6a6; "></i>
+                        <div class="flex flex-col">
+                            <p class="text-xs md:text-xl" style="color: #a6a6a6;">Food Delivery Website</p>
+                            <p class="text-xs" style="color: #a6a6a6;">HTML,CSS,MYSQL,Python Django</p>
+                        </div>
+                        <i class="fa-solid fa-greater-than text-xl md:text-2xl md:hidden" style="color: #a6a6a6;" ></i>
+                    </div></a>
+                    <a href="https://github.com/IG-4Nzy/SocialMedia"><div class="flex space-x-5 h-20 items-center border-2 border-gray-300 p-5 md:hover:scale-105 md:transition md:duration-200">
+                        <i class="fa-brands fa-instagram text-2xl md:text-4xl" style="color: #a6a6a6; "></i>
+                        <div class="flex flex-col">
+                            <p class="text-xs md:text-xl" style="color: #a6a6a6;">Social Media Website</p>
+                            <p class="text-xs" style="color: #a6a6a6;">HTML,CSS,MYSQL,Python Django</p>
+                        </div>
+                        <i class="fa-solid fa-greater-than text-xl md:text-2xl md:hidden" style="color: #a6a6a6;" ></i>
+                    </div></a>
+                    <a href="https://github.com/IG-4Nzy/portfolio"><div class="flex space-x-5 h-20 items-center border-2 border-gray-300 p-5 md:hover:scale-105 md:transition md:duration-200">
+                        <i class="fas fa-person text-2xl md:text-4xl" style="color: #a6a6a6; "></i>
+                        <div class="flex flex-col">
+                            <p class="text-xs md:text-xl" style="color: #a6a6a6;">Portfolio</p>
+                            <p class="text-xs" style="color: #a6a6a6;">HTML,CSS,Tailwind</p>
+                        </div>
+                        <i class="fa-solid fa-greater-than text-xl md:text-2xl md:hidden" style="color: #a6a6a6;" ></i>
+                    </div></a>
+                    <a href="https://github.com/IG-4Nzy/portfolio"><div class="flex space-x-5 h-20 items-center border-2 border-gray-300 p-5 md:hover:scale-105 md:transition md:duration-200">
+                        <i class="fas fa-book text-2xl md:text-4xl" style="color: #a6a6a6; "></i>
+                        <div class="flex flex-col">
+                            <p class="text-xs md:text-xl" style="color: #a6a6a6;">CSMS</p>
+                            <p class="text-xs" style="color: #a6a6a6;">HTML,CSS,Tailwind,Javascript,Python Django,Sqlite3</p>
+                        </div>
+                        <i class="fa-solid fa-greater-than text-xl md:text-2xl md:hidden" style="color: #a6a6a6;" ></i>
+                    </div></a>
+                   
+                </div>
+
             </div>
         </div>
 
 
 
-        <div id="contact" class="bg-primary h-full w-screen md:flex md:items-center md:content-center md:justify-center">
+        <div id="contact" class="mt-96 md:mt-0 bg-primary h-full w-screen md:flex md:items-center md:content-center md:justify-center">
             <div class="w-full md:flex md:space-x-4">
                 <div class="md:w-full space-y-10 px-5 md:space-y-16">
                     <div><p class="text-white text-3xl font-bold md:text-5xl md:pt-5  md:space-y-10 ">Contact Me</p></div>
