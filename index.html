@@ -105,551 +105,503 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
     </script>
-</head>
-<body class="overflow-x-hidden bg-primary bg-primary w-screen h-screen">
-        <div class="flex header h-32" id="home">
-            <div class="container flex justify-between h-32">
-                <div class="text-5xl mt-5 ">
-                    <p  class="text-white text-3xl md:text-5xl px-5 md:px-12 font-bold "><span class="text-pinky">A</span>thul.</p>
-                </div>
-                <div class="">
-                    <ul class="hidden lg:flex text-white  space-x-16 text-lg mt-5">
-                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#home"> Home</a></li>
-                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#about"> About</a></li>
-                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#services"> Services</a></li>
-                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#portfolio"> Portfolio</a></li>
-                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#contact"> Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-    
-            <!-- mobile screen -->
-    
-            <div id="hamburger" class="lg:hidden cursor-pointer z-50 mt-6 mr-5 lg:h-32">
-               <div><i class="fa-solid fa-bars bar " style="color: #ffffff;font-size: 30px;"></i></div>
-            </div>
-            <div id="menu" class="hidden bg-primary h-[100vh] absolute inset-0 z-10">
-                <ul class="h-full grid place-items-center py-20 text-white">
-                    <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#home"> Home</a></li>
-                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#about"> About</a></li>
-                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#services"> Services</a></li>
-                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#portfolio"> Portfolio</a></li>
-                        <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#contact"> Contact</a></li>
-                </ul>
-            </div> 
-        </div>
-        <div class="bg-primary photo w-screen flex-col flex md:flex-row overflow-hidden h-full md:items-center md:justify-center md:content-center items-center content-center justify-center space-y-10 md:space-y-0  px-5">
-                <div class="md:w-3/5 text-white font-sans space-y-5 md:pl-48 flex md:flex-col flex-col md:justify-center  ">
-                    <p class="lg:text-3xl md:text-3xl md:w-full text-xl">Diploma In Computer Engineering</p>
-                    <p class="lg:text-8xl md:text-5xl text-4xl font-bold">Hi, I'm <span class="text-pinky">Athul</span></p>
-                    <p class="lg:text-9xl md:text-5xl text-3xl font-bold">From Kerala</p>
-                </div>
-                <div class="md:w-1/2 md:h-full h-3/5 w-full overflow-hidden flex md:justify-center justify-center ">
-                    <div class="w-4/5 h-4/5"><img class="md:w-11/12 h-full md:mr-16 overflow-hidden rounded-3xl" src="03.jpg" alt="img.png"></div>
-                </div>
-        </div>
-
-        <div class="bg-blacky w-screen flex flex-col md:flex-row">
-            <div class="h-full w-1/2">
-                <!-- image -->
-                <div class="md:w-full md:h-full flex md:items-center md:justify-center">
-                    <div class="md:h-1/2 relative left-20 mt-10  md:left-0 md:w-1/2 overflow-hidden md:items-center flex justify-center">
-                        <div class="flex w-full h-full "><img class="relative md:top-16 top-5 h-full" src="03.jpg" alt="#"></div>
-                    </div>
-                </div>
-            </div>
-            <!-- description -->
-            <div id="about" class="w-screen md:w-1/2 text-justify pr-28 text-white lg:space-y-10 md:space-y-5 sm:space-y-5 mt-10">
-                <p class="w-screen md:w-full lg:text-7xl md:text-4xl font-bold ml-5 text-3xl">About Me</p>
-                <p class="w-screen md:w-full md:leading-7 px-5 ">I am Athul Krishnan A S, a 20-year-old individual from the charming town of Vilappilsala in Thiruvananthapuram, Kerala. My passion lies in computer engineering and full-stack development, and I am determined to make a significant impact in the tech industry.
-
-                    What truly defines me is my unwavering enthusiasm for full-stack development. I am dedicated to continuously expanding my knowledge and skills in this field, which I believe sets me on the path to becoming a rising star in the world of software development. I invite you to keep an eye out for my future projects and innovations in the technology world.</p>
-            
-                    <div>
-                        <div class="flex text-white md:space-x-10 space-y-3 md:space-y-0 px-5 mt-5 text-xl tab-titles flex-col md:flex-row ">
-                            <p class="hover:text-pinky hover:border-b-2 border-pinky ease-in duration-200 tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="hover:text-pinky hover:border-b-2 border-pinky ease-in duration-200 tab-links " onclick="opentab('education')">Education</p>
-                            <p class="hover:text-pinky hover:border-b-2 border-pinky ease-in duration-200 tab-links " onclick="opentab('experience')">Experience</p>
-                            <p class="hover:text-pinky hover:border-b-2 border-pinky ease-in duration-200 tab-links " onclick="opentab('hobbies')">Hobbies</p>
-                        </div>
-                        <div class="w-screen tab-contents active-tab px-10 h-screen scroll-smooth " id="skills">
-                            <ul class="space-y-5 pt-10 text-sm md:text-lg">
-                                <li>
-                                    <span class="text-pinky">Programming Languages</span>
-                                    <ol class="list-disc">
-                                        <li>Proficient in languages like Python, JavaScript, and Java.</li>
-                                        <li>Familiarity with HTML, CSS, and front-end scripting languages.</li>
-                                    </ol>
-                                </li>
-                                <li>
-                                    <span class="text-pinky">Full-Stack Development</span>
-                                    <ol class="list-disc">
-                                        <li>Experience in both front-end and back-end development.</li>
-                                        <li>Basic Knowledge of popular frameworks and libraries such as React, Node.js, and Express.</li>
-                                    </ol>
-                                </li>
-                                <li>
-                                    <span class="text-pinky">Diploma in Computer Engineering</span>
-                                    <ol class="list-disc">
-                                        <li>Strong understanding of computer systems and hardware.</li>
-                                        <li>Proficiency in troubleshooting and diagnosing technical issues.</li>
-                                    </ol>
-                                </li>
-                                <li>
-                                    <span class="text-pinky">Web Development</span>
-                                    <ol class="list-disc">
-                                        <li>Building responsive and user-friendly web applications.</li>
-                                        <li>Knowledge of web development tools and technologies.</li>
-                                    </ol>
-                                </li>
-                                <li>
-                                    <span class="text-pinky">Adaptability</span>
-                                    <ol class="list-disc">
-                                        <li>Willingness to learn and adapt to new technologies and frameworks.</li>
-                                    </ol>
-                                </li>
-                                <li>
-                                    <span class="text-pinky">Attention to Detail</span>
-                                    <ol class="list-disc">
-                                        <li>A keen eye for detail in coding and design to ensure high-quality outputs.</li>
-                                    </ol>
-                                </li>
-                                <li>
-                                    <span class="text-pinky">Passion for Full-Stack Development</span>
-                                    <ol class="list-disc">
-                                        <li>Demonstrated interest and motivation to excel in full-stack development.</li>
-                                    </ol>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="w-screen tab-contents px-10  h-screen scroll-smooth " id="education">
-                            <ul class="space-y-5 pt-10 text-sm md:text-lg">
-                                <li>
-                                    <span class="text-pinky">Diploma in Computer Engineering</span>
-                                    <ol class="list-disc">
-                                        <li>Central Polytechnic College, Vattiyoorkavu, Thiruvananthapuram]</li>
-                                        <li>Currently pursuing</li>
-                                        <li>Year of Enrollment: 2021 - Present</li>
-                                    </ol>
-                                </li>
-                                <li>
-                                    <span class="text-pinky">Higher Secondary Education (VHSE)</span>
-                                    <ol class="list-disc">
-                                        <li>VHSE , Mancha,Nedumangadu,TVM</li>
-                                        <li>Specialization: Field Technician and Computer Fundamentals</li>
-                                        <li>Year of Completion: 2020</li>
-                                    </ol>
-                                </li>
-                                <li>
-                                    <span class="text-pinky">Secondary Education (10th Grade)</span>
-                                    <ol class="list-disc">
-                                        <li>Technical High School, Nedumangadu,TVM</li>
-                                        <li>Year of Completion: 2018</li>
-                                    </ol>
-                                </li>
-                                <li>
-                                    <span class="text-pinky">Web Development</span>
-                                    <ol class="list-disc">
-                                        <li>Building responsive and user-friendly web applications.</li>
-                                        <li>Knowledge of web development tools and technologies.</li>
-                                    </ol>
-                                </li>
-                                <li>
-                                    <span class="text-pinky">Adaptability</span>
-                                    <ol class="list-disc">
-                                        <li>Willingness to learn and adapt to new technologies and frameworks.</li>
-                                    </ol>
-                                </li>
-                                <li>
-                                    <span class="text-pinky">Attention to Detail</span>
-                                    <ol class="list-disc">
-                                        <li>A keen eye for detail in coding and design to ensure high-quality outputs.</li>
-                                    </ol>
-                                </li>
-                                <li>
-                                    <span class="text-pinky">Passion for Full-Stack Development</span>
-                                    <ol class="list-disc">
-                                        <li>Demonstrated interest and motivation to excel in full-stack development.</li>
-                                    </ol>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="w-screen tab-contents px-10  h-screen scroll-smooth " id="experience">
-                            <ul class="space-y-5 pt-10 text-sm md:text-lg">
-                                <li>
-                                    <span class="text-pinky">Web Development Intern</span>
-                                    <ol class="list-disc">
-                                        <li>At M-squared Pvt Ltd,Technopark</li>
-                                        <li>Fullstack Devolopment</li>
-                                        <li>HTML,CSS,JS,PYTHON-DJANGO</li>
-                                    </ol>
-                                </li>
-                                <li>
-                                    <span class="text-pinky">6 Months Full Stack Devoloper Course</span>
-                                    <ol class="list-disc">
-                                        <li>Doing Full stack Devolopment Certified Course From Skillhara Pvt,Ltd</li>
-                                    </ol>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="w-screen tab-contents  px-10 h-screen scroll-smooth " id="hobbies">
-                            <ul class="space-y-5 pt-10 text-sm md:text-lg">
-                                <li>
-                                    <span class="text-white">Coding and Programming</span>
-                                </li>
-                                <li>
-                                    <span class="text-white">Web Development Side Projects</span>
-                                </li>
-                                <li>
-                                    <span class="text-white">Volunteer Work</span>
-                                </li>
-                                <li>
-                                    <span class="text-white">Problem Solving</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>       
-            </div>
-        </div>
-
-        <div id="services" class="bg-primary h-full w-screen px-20 md:px-0 space-y-5 md:space-y-20 md:flex md:justify-center md:flex-col ">
-            <div class="md:w-full md:justify-center md:flex "><p class="text-white text-3xl font-bold ml-10 pt-10">What i know</p></div>
-            <h1 class="text-white font-semibold text-2xl border-l-2 h-10 border-secondary pl-5 md:pl-0 md:border-l-0 md:flex md:ml-12 md:border-b-2 md:border-secondary md:w-24">Frontend</h1>
-            <div id="scroll" class="space-y-5 flex flex-col md:overflow-auto md:flex-wrap md:overflow-x-scroll md:flex-row md:space-y-0 md:space-x-24 md:w-full md:justify-center">
-                <div class=" w-52 h-52 md:w-72 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
-                    <img class="h-24  md:w-96 md:h-64 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="html,css.jpg" alt="webdesign">
-                    <p class="text-white font-bold text-2xl">HTML ,CSS</p>
-                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert</div>
-                    </div>
-                </div>
-                <div class=" w-52 h-52 md:w-72 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
-                    <img class="h-24 md:w-96 md:h-64 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="tailwind.jpg" alt="tailwind">
-                    <p class="text-white font-bold text-2xl">Tailwind CSS</p>
-                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert</div>
-                    </div>
-                </div>
-                <div class=" w-52 h-52 md:w-72 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
-                    <img class="h-24  md:w-96 md:h-64 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="javascript.png" alt="javascript">
-                    <p class="text-white font-bold text-2xl">Javascript</p>
-                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 60%"> Advanced</div>
-                    </div>
-                </div>
-                <div class=" w-52 h-52 md:w-72 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
-                    <img class="h-24  md:w-96 md:h-64 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="react.png" alt="react">
-                    <p class="text-white font-bold text-2xl">React JS</p>
-                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 30%"> Novice</div>
-                    </div>
-                </div>
-                
-                
-            </div>
-
-        </div>
-        <div id="services2" class=" mt-96 md:mt-0 bg-primary h-full w-screen px-20 md:px-0 space-y-5 md:space-y-20 md:flex md:justify-center md:flex-col ">
-            <h1 class="text-white font-semibold text-2xl border-l-2 h-10 border-secondary pl-5 md:pl-0 md:border-l-0 md:flex md:ml-12 md:border-b-2 md:border-secondary md:w-24">Backend</h1>
-            <div id="scroll" class="space-y-5 flex flex-col md:overflow-auto md:flex-wrap md:overflow-x-scroll md:flex-row md:space-y-0 md:space-x-24 md:w-full md:justify-center">
-                <div class="mt-5 w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
-                    <img class="h-24 md:w-80 md:h-44 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="django.png" alt="webdesign">
-                    <p class="text-white font-bold text-2xl">Python Django</p>
-                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Intermediate</div>
-                    </div>
-                </div>
-                <div class=" w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
-                    <img class="h-24 md:w-80 md:h-44 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="larawel.jpg" alt="tailwind">
-                    <p class="text-white font-bold text-2xl">PHP Laravel</p>
-                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 50%"> Novice </div>
-                    </div>
-                </div>
-                <div class=" w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
-                    <img class="h-24 md:w-80 md:h-44 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="nodejs.jpg" alt="javascript">
-                    <p class="text-white font-bold text-2xl">NODE JS</p>
-                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 30%"> Novice</div>
-                    </div>
-                </div>
-                <div class=" w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
-                    <img class="h-24 md:w-80 md:h-44 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="expressjs.png" alt="react">
-                    <p class="text-white font-bold text-2xl">Express JS</p>
-                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 30%"> Novice</div>
-                    </div>
-                </div>
-                
-                
-            </div>
-
-        </div>
-        <div id="services3" class="mt-96 md:mt-0 bg-primary h-full w-screen px-20 md:px-0 space-y-5 md:space-y-20 md:flex md:justify-center md:flex-col ">
-            <h1 class="text-white font-semibold text-2xl border-l-2 h-10 border-secondary pl-5 md:pl-0 md:border-l-0 md:flex md:ml-12 md:border-b-2 md:border-secondary md:w-24">Databases</h1>
-            <div id="scroll" class="space-y-5 flex flex-col md:overflow-auto md:flex-wrap md:overflow-x-scroll md:flex-row md:space-y-0 md:space-x-24 md:w-full md:justify-center">
-                <div class="mt-5 w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
-                    <img class="h-24 md:w-60 md:h-60 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="mysql.png" alt="webdesign">
-                    <p class="text-white font-bold text-2xl">MySql </p>
-                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 70%"> Proficient</div>
-                    </div>
-                </div>
-                <div class=" w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
-                    <img class="h-24 md:w-60 md:h-60 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="sqlite3.jpg" alt="tailwind">
-                    <p class="text-white font-bold text-2xl">Sqlite3 </p>
-                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 70%"> Proficient </div>
-                    </div>
-                </div>       
-            </div>
-
-        </div>
-        <div id="services4" class=" bg-primary h-full w-screen px-20 md:px-0 space-y-5 md:space-y-20 md:flex md:justify-center md:flex-col ">
-            <h1 class="text-white font-semibold text-2xl border-l-2 h-10 border-secondary pl-5 md:pl-0 md:border-l-0 md:flex md:ml-12 md:border-b-2 md:border-secondary md:w-52">Languages Known</h1>
-            <div id="scroll" class="space-y-24 flex flex-col md:overflow-auto md:flex-wrap md:overflow-x-scroll md:flex-row md:space-y-0 md:space-x-24 md:w-full md:justify-center">
-                <div class="mt-5 w-52 h-16 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
-                    <img class="h-16 md:w-64 md:h-64 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="c.png" alt="webdesign">
-                    <p class="text-white font-bold text-2xl">C Programming </p>
-                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 80%"> Proficient</div>
-                    </div>
-                </div>
-                <div class=" w-52 h-16 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
-                    <img class="h-16 md:w-64 md:h-64 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="java.jpg" alt="tailwind">
-                    <p class="text-white font-bold text-2xl">Java </p>
-                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 50%"> Novice </div>
-                    </div>
-                </div>       
-                <div class=" w-52 h-16 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
-                    <img class="h-16 md:w-64 md:h-64 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="php.png" alt="tailwind">
-                    <p class="text-white font-bold text-2xl">PHP </p>
-                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 50%"> Proficient </div>
-                    </div>
-                </div>       
-                <div class=" w-52 h-16 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
-                    <img class="md:w-64 md:h-64 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="python.png" alt="tailwind">
-                    <p class="text-white font-bold text-2xl">PYTHON </p>
-                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 70%"> Proficient </div>
-                    </div>
-                </div>       
-                <div class=" w-52 h-16 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
-                    <img class="h-16 md:w-64 md:h-64 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="javascript.png" alt="tailwind">
-                    <p class="text-white font-bold text-2xl">Javascript </p>
-                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 60%"> Proficient </div>
-                    </div>
-                </div>       
-                <div class=" w-52 h-16 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
-                    <img class="h-16 md:w-64 md:h-64 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="html.png" alt="tailwind">
-                    <p class="text-white font-bold text-2xl">HTML </p>
-                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert </div>
-                    </div>
-                </div>       
-                <div class=" w-52 h-16 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
-                    <img class="h-16 md:w-64 md:h-64 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="css.jpg" alt="tailwind">
-                    <p class="text-white font-bold text-2xl">CSS </p>
-                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert </div>
-                    </div>
-                </div>       
-                <div class=" w-52 h-16 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
-                    <img class="h-16 md:w-64 md:h-64 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="mysql.png" alt="tailwind">
-                    <p class="text-white font-bold text-2xl">SQL </p>
-                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 50%"> Proficient </div>
-                    </div>
-                </div>       
-            </div>
-
-        </div>
-
-
-
-        <div id="portfolio" class="mt-96 bg-primary_light h-screen w-screen mt-96 md:mt-0 ">
-            <div class="w-full flex justify-center pt-5">    
-                <div><p class="text-3xl text-white font-bold pt-5 px-5">My Works</p></div>
-            </div>
-            <div class="w-full h-screen flex md:flex-wrap justify-center items-center md:space-x-20 pt-5  flex-col md:flex-row  space-y-5 md:space-y-10 ">
-                <div class=" w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
-                    <a href="https://github.com/IG-4Nzy/CSMS"><img class="md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="csms.png" alt="react"></a>
-                    <p class="text-white font-bold text-xs text-center">Collage Students Monitoring System (CSMS)</p>
-                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 30%"> Beginner</div>
-                    </div>
-                </div>
-                <div class=" w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
-                    <a href="https://github.com/IG-4Nzy/hospital-website-"><img class="md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="hospitalmanagement.jpg" alt="react"></a>
-                    <p class="text-white font-bold text-2xl">Hospital Management Website</p>
-                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 30%"> Beginner</div>
-                    </div>
-                </div>
-                <div class=" w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
-                    <a href="https://github.com/IG-4Nzy/hospiital-management_django"><img class="md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="djangohos.jpg" alt="react"></a>
-                    <p class="text-white font-bold text-2xl">Django Hospital Website</p>
-                    <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                        <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 30%"> Beginner</div>
-                    </div>
-                </div>   
-            </div>
-            <div class="w-full h-screen justify-center items-center flex pt-24 flex-col md:ml-20 md:space-y-5 ">
-                <p class="text-white text-xs md:text-xl">More Projects</p>
-                <div class="w-full h-full flex items-center md:justify-center md:items-start md:flex-row flex-col md:space-x-5 space-y-5">
-                    <a href="https://github.com/IG-4Nzy/food-delivery"><div class="flex space-x-5 h-20 items-center border-2 border-gray-300 p-5 md:hover:scale-105 md:transition md:duration-200">
-                        <i class="fas fa-hamburger text-2xl md:text-4xl" style="color: #a6a6a6; "></i>
-                        <div class="flex flex-col">
-                            <p class="text-xs md:text-xl" style="color: #a6a6a6;">Food Delivery Website</p>
-                            <p class="text-xs" style="color: #a6a6a6;">HTML,CSS,MYSQL,Python Django</p>
-                        </div>
-                        <i class="fa-solid fa-greater-than text-xl md:text-2xl md:hidden" style="color: #a6a6a6;" ></i>
-                    </div></a>
-                    <a href="https://github.com/IG-4Nzy/SocialMedia"><div class="flex space-x-5 h-20 items-center border-2 border-gray-300 p-5 md:hover:scale-105 md:transition md:duration-200">
-                        <i class="fa-brands fa-instagram text-2xl md:text-4xl" style="color: #a6a6a6; "></i>
-                        <div class="flex flex-col">
-                            <p class="text-xs md:text-xl" style="color: #a6a6a6;">Social Media Website</p>
-                            <p class="text-xs" style="color: #a6a6a6;">HTML,CSS,MYSQL,Python Django</p>
-                        </div>
-                        <i class="fa-solid fa-greater-than text-xl md:text-2xl md:hidden" style="color: #a6a6a6;" ></i>
-                    </div></a>
-                    <a href="https://github.com/IG-4Nzy/portfolio"><div class="flex space-x-5 h-20 items-center border-2 border-gray-300 p-5 md:hover:scale-105 md:transition md:duration-200">
-                        <i class="fas fa-person text-2xl md:text-4xl" style="color: #a6a6a6; "></i>
-                        <div class="flex flex-col">
-                            <p class="text-xs md:text-xl" style="color: #a6a6a6;">Portfolio</p>
-                            <p class="text-xs" style="color: #a6a6a6;">HTML,CSS,Tailwind</p>
-                        </div>
-                        <i class="fa-solid fa-greater-than text-xl md:text-2xl md:hidden" style="color: #a6a6a6;" ></i>
-                    </div></a>
-                    <a href="https://github.com/IG-4Nzy/portfolio"><div class="flex space-x-5 h-20 items-center border-2 border-gray-300 p-5 md:hover:scale-105 md:transition md:duration-200">
-                        <i class="fas fa-book text-2xl md:text-4xl" style="color: #a6a6a6; "></i>
-                        <div class="flex flex-col">
-                            <p class="text-xs md:text-xl" style="color: #a6a6a6;">CSMS</p>
-                            <p class="text-xs" style="color: #a6a6a6;">HTML,CSS,Tailwind,Javascript,Python Django,Sqlite3</p>
-                        </div>
-                        <i class="fa-solid fa-greater-than text-xl md:text-2xl md:hidden" style="color: #a6a6a6;" ></i>
-                    </div></a>
-                   
-                </div>
-                <div id="contact" class="mt-24 md:mt-0 bg-primary h-full w-screen md:flex md:items-center md:content-center md:justify-center">
-                    <div class="w-screen md:flex md:flex-col md:items-center md:justify-center md:content-center">
-                        <div class="w-full md:flex md:space-x-4">
-                            <div class="md:w-full space-y-10 px-5 md:space-y-16">
-                                <div><p class="text-white text-3xl font-bold md:text-5xl md:pt-5  md:space-y-10 ">Contact Me</p></div>
-                                <div class="flex space-x-2"><i class="fa-solid fa-paper-plane" style="color: #f51e4f;"></i><p class="text-white ">athulkrishnanas321@gmail.com</p></div>
-                                <div class="flex space-x-2"><i class="fa-solid fa-phone" style="color: #f51e4f;"></i><p class="text-white ">7994128069</p></div>
-                                <div class="space-x-3">
-                                    <a href="https://www.instagram.com/ig_4nzy/"><i class="text-2xl px-3  fa-brands fa-instagram "></i></a>
-                                    <a href="https://www.facebook.com/athul.sreeni.35"><i class="text-2xl px-3  fa-brands fa-facebook"></i></a>
-                                    <a href="https://twitter.com/Athul_Sreeni"><i class="text-2xl px-3  fa-brands fa-x-twitter"></i></a>
-                                    <a href="https://www.linkedin.com/in/athul-krishnan-182109230/"><i class="text-2xl px-3  fa-brands fa-linkedin"></i></a>
-                                    <a href="https://github.com/IG-4Nzy"><i class="text-2xl px-3  fa-brands fa-github"></i></a>
-                                </div>
-                                <div class="w-32 flex text-center justify-center items-center text-white rounded-xl  h-12 bg-secondary hover:secondary_light "><a href="" download="">Download CV</a></div>
-                            </div>
-                            <div class="pt-10 px-16 w-screen">
-                                <form class="w-full space-y-10 md:space-y-5"  name="submit-to-google-sheet">
-                                    <div class="w-full"><input class="w-64 md:w-96 md:h-14" type="text" placeholder="Your Name" name="Name" id="name" required> </div>
-                                    <div class="w-full"><input class="w-64 md:w-96 md:h-14" type="email" placeholder="Your Email" name="Email" id="name" required> </div>
-                                    <div class="w-full">
-                                        <textarea class="w-64 md:w-96" placeholder="Messege" class="" name="Messages" required></textarea>
-                                    </div>
-                                    <div class="w-full">
-                                        <input type="submit" value="SUBMIT" class="w-32 flex text-center justify-center items-center text-white rounded-xl  h-12 bg-secondary hover:secondary_light ">
-                                    </div>
-                                </form>
-                                
-                            </div>
-                        </div>
-                        
-                    </div>
-        
-                </div>
-                 
-            </div>
-            
-            <div class="w-screen h-12 flex text-center  justify-center items-center bg-blacky mt-auto flex-shrink-0">
-                <p class="text-white">&copy; 2023 . All rights reserved.</p>
-            </div>
-        </div>
-
-
-
-        
-
-        
-        
-        
-        
-
-
-
-
-
-
-
-
-            
-</body>
-<style>
-    /* CSS for the hover effect */
-    a i.fa-instagram{
-        color: white;
-    }
-    a i.fa-x-twitter{
-        color: white;
-    }
-    a i.fa-facebook{
-        color: white;
-    }
-    a i.fa-linkedin{
-        color: white;
-    }
-    a i.fa-github{
-        color: white;
-    }
-    a:hover i.fa-x-twitter{
-        color: #f51e4f;
-    }
-    a:hover i.fa-facebook{
-        color: #f51e4f;
-    }
-    a:hover i.fa-linkedin{
-        color: #f51e4f;
-    }
-    a:hover i.fa-github{
-        color: #f51e4f;
-    }
-    a:hover i.fa-instagram {
-      color: #f51e4f; /* Change to your desired hover color */
-    }
-    .bg{
-        background-image: url('lap.png');
-    }
-    .bg:hover{
-        background-image: url('lap4.png');
-    }
-   
-  </style>
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyJ_D0rvuqe6Vj53kA--vOOvOmF-plhrYfeZolsgazWZayaYRY0TmHKsMb5o7rMfReTHQ/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById('msg')
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response =>{
-            msg.innerHTML = "message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
+    <style>
+        /* CSS for the hover effect */
+        a i.fa-instagram{
+            color: white;
+        }
+        a i.fa-x-twitter{
+            color: white;
+        }
+        a i.fa-facebook{
+            color: white;
+        }
+        a i.fa-linkedin{
+            color: white;
+        }
+        a i.fa-github{
+            color: white;
+        }
+        a:hover i.fa-x-twitter{
+            color: #f51e4f;
+        }
+        a:hover i.fa-facebook{
+            color: #f51e4f;
+        }
+        a:hover i.fa-linkedin{
+            color: #f51e4f;
+        }
+        a:hover i.fa-github{
+            color: #f51e4f;
+        }
+        a:hover i.fa-instagram {
+          color: #f51e4f; /* Change to your desired hover color */
+        }
+        .bg{
+            background-image: url('lap.png');
+        }
+        .bg:hover{
+            background-image: url('lap4.png');
+        }
+       
+      </style>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyJ_D0rvuqe6Vj53kA--vOOvOmF-plhrYfeZolsgazWZayaYRY0TmHKsMb5o7rMfReTHQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML = "message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
         })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-</html>
+      </script>
+    
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="navbar h-20 bg-primary flex items-center content-center justify-between">
+        <div class="athul ml-5 md:ml-80">
+            <p class="text-pinky md:text-3xl font-bold">A<span class="text-white">thul.</span></p>
+        </div>
+        <div class="navlinks md:mr-56 hidden md:flex">
+            <ul class="flex space-x-20 text-white text-lg">
+                <a href="#home"><li class="hover:text-pinky duration-700 transition ease-in-out">Home</li></a>
+                <a href="#about"><li class="hover:text-pinky duration-700 transition ease-in-out">About</li></a>
+                <a href="#services"><li class="hover:text-pinky duration-700 transition ease-in-out">Services</li></a>
+                <a href="#portfolio"><li class="hover:text-pinky duration-700 transition ease-in-out">Portfolio</li></a>
+                <a href="#contact"><li class="hover:text-pinky duration-700 transition ease-in-out">Contact</li></a>
+            </ul>
+        </div>
+        <div id="hamburger" class="lg:hidden cursor-pointer z-50  mr-5">
+            <div><i class="fa-solid fa-bars bar " style="color: #ffffff;font-size: 20px;"></i></div>
+         </div>
+         <div id="menu" class="hidden bg-primary h-[100vh] absolute inset-0 z-10">
+             <ul class="h-full grid place-items-center py-20 text-white">
+                 <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#home"> Home</a></li>
+                     <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#about"> About</a></li>
+                     <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#services"> Services</a></li>
+                     <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#portfolio"> Portfolio</a></li>
+                     <li class="hover:text-secondary hover:border-b-2 border-secondary ease-in duration-200"><a href="#contact"> Contact</a></li>
+             </ul>
+         </div> 
+        
+    </div>
+    <!-- introduction -->
+    <div class="introduction bg-primary flex items-center justify-center content-center md:h-screen md:w-screen md:justify-between">
+        <div class="name text-white ml-5 md:ml-48 ">
+            <p class="text-xl  md:text-8xl font-bold">Hi , I'm <span class="text-pinky">Athul</span></p>
+            <p class="text-xl  md:text-9xl font-bold">From Kerala</p>
+            <p class="text-sm  md:text-3xl">Diploma in Computer engineering</p>
+        </div>
+        <img class="rounded-full md:rounded-3xl  w-60 h-60 p-5 md:p-0 md:w-1/3 md:h-3/4 md:mr-48" src="03.jpg" alt="myphoto">
+
+    </div>
+    <!-- about me -->
+    <div class="about_me space-y-5 md:space-x-56  md:h-screen md:bg-bg md:flex md:flex-row md:items-center md:justify-center md:content-center flex items-center  flex-col bg-primary">
+        <img class="mt-5 md:w-1/5 md:h-3/5 md:rounded-sm w-52 h-60 rounded-2xl" src="03.jpg" alt="myphoto">
+        <div class="aboutme text-white w-3/4 md:w-2/5 md:space-y-5">
+            <p class="font-bold md:text-5xl">About Me</p>
+            <p class="text-justify md:w-11/12 md:text-xl ">I am Athul Krishnan A S, a 20-year-old individual from the charming town of Vilappilsala in Thiruvananthapuram, Kerala. My passion lies in computer engineering and full-stack development, and I am determined to make a significant impact in the tech industry.
+                What truly defines me is my unwavering enthusiasm for full-stack development. I am dedicated to continuously expanding my knowledge and skills in this field, which I believe sets me on the path to becoming a rising star in the world of software development. I invite you to keep an eye out for my future projects and innovations in the technology world.</p>
+            <div class="flex md:space-x-10 md:space-y-0 space-x-3  text-white px-5 mt-5 text-sm md:text-xl tab-titles space-x-3 items-center justify-center md:justify-start ">
+                <p class="hover:text-pinky hover:border-b-2 border-pinky ease-in duration-200 tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="hover:text-pinky hover:border-b-2 border-pinky ease-in duration-200 tab-links " onclick="opentab('education')">Education</p>
+                <p class="hover:text-pinky hover:border-b-2 border-pinky ease-in duration-200 tab-links " onclick="opentab('experience')">Experience</p>
+                <p class="hover:text-pinky hover:border-b-2 border-pinky ease-in duration-200 tab-links " onclick="opentab('hobbies')">Hobbies</p>
+            </div>
+
+            <div class="tab-contents active-tab scroll-smooth " id="skills">
+                <ul class="space-y-5 text-sm md:text-lg">
+                    <li>
+                        <span class="text-pinky">Programming Languages</span>
+                        <ol class="list-disc">
+                            <li>Proficient in languages like Python, JavaScript, and Java.</li>
+                            <li>Familiarity with HTML, CSS, and front-end scripting languages.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span class="text-pinky">Full-Stack Development</span>
+                        <ol class="list-disc">
+                            <li>Experience in both front-end and back-end development.</li>
+                            <li>Basic Knowledge of popular frameworks and libraries such as React, Node.js, and Express.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span class="text-pinky">Diploma in Computer Engineering</span>
+                        <ol class="list-disc">
+                            <li>Strong understanding of computer systems and hardware.</li>
+                            <li>Proficiency in troubleshooting and diagnosing technical issues.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span class="text-pinky">Web Development</span>
+                        <ol class="list-disc">
+                            <li>Building responsive and user-friendly web applications.</li>
+                            <li>Knowledge of web development tools and technologies.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span class="text-pinky">Adaptability</span>
+                        <ol class="list-disc">
+                            <li>Willingness to learn and adapt to new technologies and frameworks.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span class="text-pinky">Attention to Detail</span>
+                        <ol class="list-disc">
+                            <li>A keen eye for detail in coding and design to ensure high-quality outputs.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span class="text-pinky">Passion for Full-Stack Development</span>
+                        <ol class="list-disc">
+                            <li>Demonstrated interest and motivation to excel in full-stack development.</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-contents scroll-smooth " id="education">
+                <ul class="space-y-5 text-sm md:text-lg">
+                    <li>
+                        <span class="text-pinky">Diploma in Computer Engineering</span>
+                        <ol class="list-disc">
+                            <li>Central Polytechnic College, Vattiyoorkavu, Thiruvananthapuram]</li>
+                            <li>Currently pursuing</li>
+                            <li>Year of Enrollment: 2021 - Present</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span class="text-pinky">Higher Secondary Education (VHSE)</span>
+                        <ol class="list-disc">
+                            <li>VHSE , Mancha,Nedumangadu,TVM</li>
+                            <li>Specialization: Field Technician and Computer Fundamentals</li>
+                            <li>Year of Completion: 2020</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span class="text-pinky">Secondary Education (10th Grade)</span>
+                        <ol class="list-disc">
+                            <li>Technical High School, Nedumangadu,TVM</li>
+                            <li>Year of Completion: 2018</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span class="text-pinky">Web Development</span>
+                        <ol class="list-disc">
+                            <li>Building responsive and user-friendly web applications.</li>
+                            <li>Knowledge of web development tools and technologies.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span class="text-pinky">Adaptability</span>
+                        <ol class="list-disc">
+                            <li>Willingness to learn and adapt to new technologies and frameworks.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span class="text-pinky">Attention to Detail</span>
+                        <ol class="list-disc">
+                            <li>A keen eye for detail in coding and design to ensure high-quality outputs.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span class="text-pinky">Passion for Full-Stack Development</span>
+                        <ol class="list-disc">
+                            <li>Demonstrated interest and motivation to excel in full-stack development.</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-contents scroll-smooth " id="experience">
+                <ul class="space-y-5 text-sm md:text-lg">
+                    <li>
+                        <span class="text-pinky">Web Development Intern</span>
+                        <ol class="list-disc">
+                            <li>At M-squared Pvt Ltd,Technopark</li>
+                            <li>Fullstack Devolopment</li>
+                            <li>HTML,CSS,JS,PYTHON-DJANGO</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span class="text-pinky">6 Months Full Stack Devoloper Course</span>
+                        <ol class="list-disc">
+                            <li>Doing Full stack Devolopment Certified Course From Skillhara Pvt,Ltd</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-contents scroll-smooth " id="hobbies">
+                <ul class="space-y-5 text-sm md:text-lg">
+                    <li>
+                        <span class="text-white">Coding and Programming</span>
+                    </li>
+                    <li>
+                        <span class="text-white">Web Development Side Projects</span>
+                    </li>
+                    <li>
+                        <span class="text-white">Volunteer Work</span>
+                    </li>
+                    <li>
+                        <span class="text-white">Problem Solving</span>
+                    </li>
+                </ul>
+            </div>  
+        </div> 
+    </div>
+    <!-- What i knows  -->
+    <div class="what_i_knows bg-primary flex flex-col items-center justify-center ">
+        <p class="font-bold text-2xl mt-5 text-white">Frontend Devolopment</p>
+        <div class="frontend md:space-y-10 flex  md:flex-row flex-wrap items-center justify-center">
+            <div class="html mt-5 md:mt-10 w-40 h-40 md:w-1/5 md:h-1/5 px-5 text-white font-bold flex flex-col items-center">
+                <img class="" src="html,css.jpg" alt="html,css">
+                <p class="text-sm md:text-lg">HTML,CSS</p>
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert</div>
+                </div>
+            </div>
+            <div class="html w-32 h-32 md:w-1/5 md:h-1/5 px-5 text-white font-bold flex flex-col items-center">
+                <img class="" src="tailwind.jpg" alt="tailwind">
+                <p class="text-sm md:text-lg">Tailwind CSS</p>
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert</div>
+                </div>
+            </div>
+            <div class="html w-32 h-32 md:w-1/5 md:h-1/5 px-5 text-white font-bold flex flex-col items-center">
+                <img class="" src="js.png" alt="Javascript">
+                <p class="text-sm md:text-lg">Javascript</p>
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert</div>
+                </div>
+            </div>
+            <div class="html w-32 h-32 md:w-1/5 md:h-1/5 px-5 text-white font-bold flex flex-col items-center">
+                <img class="" src="react.png" alt="ReactJS">
+                <p class="text-sm md:text-lg">ReactJS</p>
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert</div>
+                </div>
+            </div>
+        </div>
+        <p class="font-bold text-2xl mt-10 text-white">Backend Devolopment</p>
+        <div class="frontend md:space-y-10 flex  md:flex-row flex-wrap items-center justify-center">
+            <div class="html mt-5 md:mt-10 w-40 h-40 md:w-1/5 md:h-1/5 px-5 text-white font-bold flex flex-col items-center">
+                <img class="" src="dja.jpg" alt="html,css">
+                <p class="text-sm md:text-lg">Python Django</p>
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert</div>
+                </div>
+            </div>
+            <div class="html w-32 h-32 md:w-1/5 md:h-1/5 px-5 text-white font-bold flex flex-col items-center">
+                <img class="" src="larawel.jpg" alt="tailwind">
+                <p class="text-sm md:text-lg">PHP Laravel</p>
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert</div>
+                </div>
+            </div>
+            <div class="html w-32 h-32 md:w-1/5 md:h-1/5 px-5 text-white font-bold flex flex-col items-center">
+                <img class="" src="nodejs.jpg" alt="Javascript">
+                <p class="text-sm md:text-lg">Node JS</p>
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert</div>
+                </div>
+            </div>
+            <div class="html w-32 h-32 md:w-1/5 md:h-1/5 px-5 text-white font-bold flex flex-col items-center">
+                <img class="" src="expressjs.png" alt="ReactJS">
+                <p class="text-sm md:text-lg">Express JS</p>
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert</div>
+                </div>
+            </div>
+        </div>
+        <p class="font-bold text-2xl mt-10 text-white">Databases</p>
+        <div class="frontend md:space-y-10 md:space-x-40 flex  md:flex-row flex-wrap items-center justify-center">
+            <div class="html mt-5 md:mt-10 w-40 h-40 md:w-1/5 md:h-1/5 px-5 text-white font-bold flex flex-col items-center">
+                <img class="" src="mysqll.png" alt="html,css">
+                <p class="text-sm md:text-lg">MySql</p>
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert</div>
+                </div>
+            </div>
+            <div class="html w-32 h-32 md:w-1/5 md:h-1/5 px-5 text-white font-bold flex flex-col items-center">
+                <img class="" src="sqli.jpg" alt="tailwind">
+                <p class="text-sm md:text-lg">Sqlite3</p>
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Programming lanmguages Known  -->
+    <div class="programming_languages bg-primary md:bg-primary_light flex items-center justify-center flex-col">
+        <p class="text-white text-xl font-bold mt-5">Programming Languages Known</p>
+        <div class="frontend md:space-y-10 flex  md:flex-row flex-wrap items-center justify-center">
+            <div class="html mt-5 md:mt-10 w-40 h-40 md:w-1/5 md:h-1/5 px-5 text-white font-bold flex flex-col items-center">
+                <img class="" src="c.png" alt="html,css">
+                <p class="text-sm md:text-lg">C Programming</p>
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert</div>
+                </div>
+            </div>
+            <div class="html w-32 h-32 md:w-1/5 md:h-1/5 px-5 text-white font-bold flex flex-col items-center">
+                <img class="" src="js.png" alt="tailwind">
+                <p class="text-sm md:text-lg">Java Script</p>
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert</div>
+                </div>
+            </div>
+            <div class="html w-32 h-32 md:w-1/5 md:h-1/5 px-5 text-white font-bold flex flex-col items-center">
+                <img class="" src="jv.png" alt="Javascript">
+                <p class="text-sm md:text-lg">Java</p>
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert</div>
+                </div>
+            </div>
+            <div class="html w-32 h-32 md:w-1/5 md:h-1/5 px-5 text-white font-bold flex flex-col items-center">
+                <img class="" src="html.jpg" alt="ReactJS">
+                <p class="text-sm md:text-lg">html</p>
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert</div>
+                </div>
+            </div>
+            <div class="html w-32 h-32 md:w-1/5 md:h-1/5 px-5 text-white font-bold flex flex-col items-center">
+                <img class="" src="css.jpg" alt="ReactJS">
+                <p class="text-sm md:text-lg">CSS</p>
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert</div>
+                </div>
+            </div>
+            <div class="html w-32 h-32 md:w-1/5 md:h-1/5 px-5 text-white font-bold flex flex-col items-center">
+                <img class="" src="mysqll.png" alt="ReactJS">
+                <p class="text-sm md:text-lg">SQL</p>
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert</div>
+                </div>
+            </div>
+            <div class="html w-32 h-32 md:w-1/5 md:h-1/5 px-5 text-white font-bold flex flex-col items-center">
+                <img class="" src="python.png" alt="ReactJS">
+                <p class="text-sm md:text-lg">Python</p>
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert</div>
+                </div>
+            </div>
+            <div class="html w-32 h-32 md:w-1/5 md:h-1/5 px-5 text-white font-bold flex flex-col items-center">
+                <img class="" src="php.jpg" alt="ReactJS">
+                <p class="text-sm md:text-lg">PhP</p>
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 90%"> Expert</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- My Works  -->
+    <div class="MyWorks bg-primary flex flex-col items-center justify-center ">
+        <p class="md:text-4xl font-bold text-white md:mt-5 underline ">Projects</p>
+        <div class="flex md:flex-wrap justify-center items-center md:space-x-20 pt-5  flex-col md:flex-row  space-y-5 md:space-y-10 ">
+            <div class=" w-52 h-52 md:w-96 md:mt-10 rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                <a href="https://github.com/IG-4Nzy/CSMS"><img class="md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="csms.png" alt="react"></a>
+                <p class="text-white font-bold text-sm md:text-xl text-center">Collage Students Monitoring System</p>
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 30%"> Beginner</div>
+                </div>
+            </div>
+            <div class=" w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                <a href="https://github.com/IG-4Nzy/hospital-website-"><img class="md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="hospitalmanagement.jpg" alt="react"></a>
+                <p class="text-white font-bold text-sm md:text-2xl">Hospital Management Website</p>
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 30%"> Beginner</div>
+                </div>
+            </div>
+            <div class=" w-52 h-52 md:w-96 md:h-full rounded-3xl  flex items-center justify-center flex-col space-y-1 md:space-y-3">
+                <a href="https://github.com/IG-4Nzy/hospiital-management_django"><img class="md:w-96 md:h-72 rounded-2xl md:scale-95 md:hover:scale-100 md:transition md:duration-500 md:cursor-pointer" src="djangohos.jpg" alt="react"></a>
+                <p class="text-white font-bold text-sm md:text-2xl">Django Hospital Website</p>
+                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                    <div class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 30%"> Beginner</div>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <!-- More Projects  -->
+    <div class="More_projects bg-primary flex flex-col items-center justify-center pb-5 ">
+        <p class="md:text-4xl font-bold text-white md:mt-5 underline ">More Projects</p>
+        <div class="flex items-center md:justify-center md:items-start md:flex-row flex-col md:space-x-5 space-y-5">
+            <a class="mt-5" href="https://github.com/IG-4Nzy/food-delivery"><div class="flex space-x-5 h-20 w-80 items-center border-2 border-gray-300 p-5 md:hover:scale-105 md:transition md:duration-200 justify-between">
+                <i class="fas fa-hamburger text-2xl md:text-4xl" style="color: #a6a6a6; "></i>
+                <div class="flex flex-col">
+                    <p class="text-xs md:text-xl" style="color: #a6a6a6;">Food Delivery Website</p>
+                    <p class="text-xs" style="color: #a6a6a6;">HTML,CSS,MYSQL,Python Django</p>
+                </div>
+                <i class="fa-solid fa-greater-than text-xl md:text-2xl md:hidden" style="color: #a6a6a6;" ></i>
+            </div></a>
+            <a href="https://github.com/IG-4Nzy/SocialMedia"><div class="w-80 flex space-x-5 h-20 items-center border-2 border-gray-300 p-5 md:hover:scale-105 md:transition md:duration-200 justify-between">
+                <i class="fa-brands fa-instagram text-2xl md:text-4xl" style="color: #a6a6a6; "></i>
+                <div class="flex flex-col">
+                    <p class="text-xs md:text-xl" style="color: #a6a6a6;">Social Media Website</p>
+                    <p class="text-xs" style="color: #a6a6a6;">HTML,CSS,MYSQL,Python Django</p>
+                </div>
+                <i class="fa-solid fa-greater-than text-xl md:text-2xl md:hidden" style="color: #a6a6a6;" ></i>
+            </div></a>
+            <a href="https://github.com/IG-4Nzy/portfolio"><div class="w-80 flex space-x-5 h-20 items-center border-2 border-gray-300 p-5 md:hover:scale-105 md:transition md:duration-200 justify-between">
+                <i class="fas fa-person text-2xl md:text-4xl" style="color: #a6a6a6; "></i>
+                <div class="flex flex-col">
+                    <p class="text-xs md:text-xl" style="color: #a6a6a6;">Portfolio</p>
+                    <p class="text-xs" style="color: #a6a6a6;">HTML,CSS,Tailwind</p>
+                </div>
+                <i class="fa-solid fa-greater-than text-xl md:text-2xl md:hidden" style="color: #a6a6a6;" ></i>
+            </div></a>
+            <a href="https://github.com/IG-4Nzy/portfolio"><div class="w-80 flex space-x-5 h-20 items-center border-2 border-gray-300 p-5 md:hover:scale-105 md:transition md:duration-200">
+                <i class="fas fa-book text-2xl md:text-4xl" style="color: #a6a6a6; "></i>
+                <div class="flex flex-col">
+                    <p class="text-xs md:text-xl" style="color: #a6a6a6;">CSMS</p>
+                    <p class="text-xs" style="color: #a6a6a6;">HTML,CSS,Tailwind,Javascript,Python Django,Sqlite3</p>
+                </div>
+                <i class="fa-solid fa-greater-than text-xl md:text-2xl md:hidden" style="color: #a6a6a6;" ></i>
+            </div></a>
+           
+        </div>
+    </div>
+    <!-- Contact Me  -->
+    <div class="Contact_Me bg-primary_light flex flex-col md:flex-row pb-5">
+        <div class="md:w-full space-y-10 px-5 md:space-y-16 flex flex-col items-center justify-center md:justify-start md:items-start">
+            <div><p class="text-white text-3xl font-bold md:text-5xl md:pt-5  md:space-y-10 mt-5 ">Contact Me</p></div>
+            <div class="flex space-x-2"><i class="fa-solid fa-paper-plane" style="color: #f51e4f;"></i><p class="text-white ">athulkrishnanas321@gmail.com</p></div>
+            <div class="flex space-x-2"><i class="fa-solid fa-phone" style="color: #f51e4f;"></i><p class="text-white ">7994128069</p></div>
+            <div class="space-x-3 text-white">
+                <a href="https://www.instagram.com/ig_4nzy/"><i class="text-2xl px-3  fa-brands fa-instagram "></i></a>
+                <a href="https://www.facebook.com/athul.sreeni.35"><i class="text-2xl px-3  fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/Athul_Sreeni"><i class="text-2xl px-3  fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/athul-krishnan-182109230/"><i class="text-2xl px-3  fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/IG-4Nzy"><i class="text-2xl px-3  fa-brands fa-github"></i></a>
+            </div>
+            <div class="w-32 flex text-center justify-center items-center text-white rounded-xl  h-12 bg-secondary hover:secondary_light "><a href="" download="RESUME.pdf">Download CV</a></div>
+        </div>
+        <div class="pt-10 px-16 w-screen">
+            <form class="w-full space-y-10 md:space-y-5 flex flex-col items-center justify-center"  name="submit-to-google-sheet">
+                <input class="w-64 md:w-3/4 md:h-14 text-center" type="text" placeholder="Your Name" name="Name" id="name" required> 
+                <input class="w-64 md:w-3/4 md:h-14 text-center" type="email" placeholder="Your Email" name="Email" id="name" required> 
+                <textarea class="w-64 md:w-3/4 text-center" placeholder="Messege" class="" name="Messages" required></textarea>
+                <input type="submit" value="SUBMIT" class="w-32 flex text-center justify-center items-center text-white rounded-xl  h-12 bg-secondary hover:secondary_light ">
+                
+            </form>
+            
+        </div>
+    </div>
+    <!-- Footer  -->
+    <div class="w-screen h-12 flex text-center  justify-center items-center bg-blacky mt-auto flex-shrink-0">
+        <p class="text-white">&copy; 2023 . All rights reserved.</p>
+    </div>
+
+
+
+
+</body>
